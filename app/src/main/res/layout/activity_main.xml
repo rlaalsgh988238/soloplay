@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- 상단 UI StartPoint -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+
+            android:background="@color/purple_700">
+            <!-- 상단 바 UI StartPoint -->
+            <LinearLayout
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="setting"/>
+
+            </LinearLayout>
+            <!-- 상단 바 UI EndPoint-->
+
+            <!-- 뉴스바 UI StartPoint -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/teal_700">
+                <TextView
+                    android:id="@+id/sdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="News"
+                    android:textSize="50dp"
+                    android:gravity="center_vertical|left"/>
+            </LinearLayout>
+            <!-- 뉴스바 UI EndPoint-->
+
+            <!-- 지역구바 UI StartPoint -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:text="hello?"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:text="hello?"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:text="hello?"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:text="hello?"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:text="hello?"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:text="hello?"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!-- 지역구바 UI EndPoint-->
+
+        </LinearLayout>
+        <!-- 상단 UI EndPoint-->
+
+        <!-- 본문 UI StartPoint-->
+        <ScrollView
+            android:layout_weight="15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:text="hello?"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+                <Button
+                    android:text="hello?"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+                <Button
+                    android:text="hello?"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+                <Button
+                    android:text="hello?"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+                <Button
+                    android:text="hello?"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+        <!-- 본문 UI EndPoint-->
+
+        <!-- 하단바 UI StartPoint-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            android:background="@color/purple_700">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:text="Home" />
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:text="pre" />
+        </LinearLayout>
+        <!-- 하단바 UI EndPoint-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
