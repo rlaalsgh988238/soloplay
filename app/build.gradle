@@ -1,13 +1,15 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
 }
 
 android {
     namespace 'org.techtown.politicsproject'
     compileSdk 32
-    viewBinding{
-        enabled = true
+    buildFeatures {
+        // 뷰 바인딩 활성화
+        viewBinding true
     }
 
     defaultConfig {

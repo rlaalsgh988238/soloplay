@@ -18,130 +18,55 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="5"
-            android:orientation="vertical"
-
-            android:background="@color/purple_700">
-            <!-- 상단 바 UI StartPoint -->
-            <LinearLayout
-                android:gravity="right"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-                <Button
-                    android:layout_width="70dp"
-                    android:layout_height="match_parent"
-                    android:text="setting"/>
-
-            </LinearLayout>
-            <!-- 상단 바 UI EndPoint-->
-
-            <!-- 뉴스바 UI StartPoint -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:background="@color/teal_700">
-                <TextView
-                    android:id="@+id/sdf"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="News"
-                    android:textSize="50dp"
-                    android:gravity="center_vertical|left"/>
-            </LinearLayout>
-            <!-- 뉴스바 UI EndPoint-->
-
-            <!-- 지역구바 UI StartPoint -->
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-                    <Button
-                        android:text="hello?"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"/>
-                    <Button
-                        android:text="hello?"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"/>
-                    <Button
-                        android:text="hello?"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"/>
-                    <Button
-                        android:text="hello?"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"/>
-                    <Button
-                        android:text="hello?"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"/>
-                    <Button
-                        android:text="hello?"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"/>
-
-                </LinearLayout>
-            </HorizontalScrollView>
-            <!-- 지역구바 UI EndPoint-->
-
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:background="@color/teal_700">
+            <Button
+                android:layout_weight="1"
+                android:layout_margin="@dimen/padding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="setting"/>
+            <TextView
+                android:id="@+id/guState"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:text="광진구"
+                android:textSize="20dp"
+                android:background="@color/purple_700"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/guSetting"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/padding"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="setting"/>
         </LinearLayout>
         <!-- 상단 UI EndPoint-->
 
         <!-- 본문 UI StartPoint-->
-        <ScrollView
-            android:layout_weight="15"
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:scrollbarFadeDuration="0"
+            android:id="@+id/newsListView"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            tools:listitem="@layout/news_listview" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <Button
-                    android:text="hello?"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"/>
-                <Button
-                    android:text="hello?"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"/>
-                <Button
-                    android:text="hello?"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"/>
-                <Button
-                    android:text="hello?"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"/>
-                <Button
-                    android:text="hello?"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"/>
-
-            </LinearLayout>
-
-        </ScrollView>
         <!-- 본문 UI EndPoint-->
 
         <!-- 하단바 UI StartPoint-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:orientation="horizontal"
-
             android:background="@color/purple_700">
 
             <Button
