@@ -1,6 +1,6 @@
 package org.techtown.politicsproject.mainfun
 
-data class News(val newsTitle:String = "NO_TITLE",
+class News(val newsTitle:String = "NO_TITLE",
                 val newsHeadLine:String = "NO_HEADLINE",
                 val newsImageURL:String = "NO_IMAGE")
 
@@ -20,7 +20,10 @@ class NewsListMaker {
         var newsImageURL="https://ibb.co/cDmzMFC"
 
         //뉴스데이터를 arraylist에 넣음
-        news.add(News(newsTitle,newsHeadLine,newsImageURL))
+        //데이터 삽입해보기
+        for(i in 1..10){
+            news.add(News("${newsTitle}$i",newsHeadLine,newsImageURL))
+        }
         return news
     }
 }

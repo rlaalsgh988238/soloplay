@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "303338448951",
+    "project_id": "politicproject-a66d0",
+    "storage_bucket": "politicproject-a66d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303338448951:android:2d019dbb7a260267a937b2",
+        "android_client_info": {
+          "package_name": "org.techtown.politicsproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303338448951-e8vifuv56fitecn6frhcqj1gfbt2n9kc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.politicsproject",
+            "certificate_hash": "83631f80d0f6c9beaab1bf28d9f84b8ace2e3e4b"
+          }
+        },
+        {
+          "client_id": "303338448951-g9id3isatdtv5dmk4lrbu77665p58min.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmolYUme3SqYPnD8OUWFSYYoS0WVHZOkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303338448951-g9id3isatdtv5dmk4lrbu77665p58min.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

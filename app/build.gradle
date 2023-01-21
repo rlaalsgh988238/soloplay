@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services' // for firebase
 
 }
 
@@ -46,4 +47,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation platform('com.google.firebase:firebase-bom:31.1.1') // firebase-bom
+    implementation 'com.google.firebase:firebase-analytics-ktx' // firbase basic
+    implementation 'com.firebaseui:firebase-ui-auth:7.2.0' // for firebase ui auth
+    implementation 'com.google.firebase:firebase-auth-ktx' // for firebase google
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
 }

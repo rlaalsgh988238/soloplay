@@ -29,7 +29,7 @@
             android:layout_weight="1"/>
 
         <TextView
-            android:background="@color/material_dynamic_neutral40"
+            android:background="@color/purple_700"
             android:id="@+id/headLine_textView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
